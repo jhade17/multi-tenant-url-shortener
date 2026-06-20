@@ -28,6 +28,7 @@
                         class="w-full border rounded p-2"
                         required
                     >
+                    <x-input-error :messages="$errors->get('password')" class="mt-2" />
                 </div>
 
                 <div class="mb-5">

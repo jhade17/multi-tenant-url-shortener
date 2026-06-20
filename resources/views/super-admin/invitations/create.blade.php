@@ -22,8 +22,10 @@
                     type="text"
                     name="company_name"
                     class="w-full border rounded p-2"
+                    value="{{ old('company_name') }}"
                     required
                 >
+                <x-input-error :messages="$errors->get('company_name')" class="mt-2" />
             </div>
 
             <div class="mb-5">
@@ -35,8 +37,10 @@
                     type="text"
                     name="name"
                     class="w-full border rounded p-2"
+                    value="{{ old('name') }}"
                     required
                 >
+                <x-input-error :messages="$errors->get('name')" class="mt-2" />
             </div>
 
             <div class="mb-5">
@@ -48,11 +52,13 @@
                     type="email"
                     name="email"
                     class="w-full border rounded p-2"
+                    value="{{ old('email') }}"
                     required
                 >
+                <x-input-error :messages="$errors->get('email')" class="mt-2" />
             </div>
 
-            <button class="bg-blue-600 text-white px-5 py-2 rounded">
+            <button class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded transition-colors shadow-sm font-medium">
                 Send Invitation
             </button>
 
