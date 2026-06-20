@@ -1,0 +1,41 @@
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files (VERY IMPORTANT)
+.env
+.env.*
+!.env.example
+
+# IDE / Editor
+.idea
+.vscode
+
+# PHP / Composer
+/vendor
+composer.lock
+.phpunit.result.cache
+.phpactor.json
+.phpunit.cache
+
+# Laravel
+/storage/*.key
+/storage/logs
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/pail
+
+/public/build
+/public/hot
+/public/storage
+
+# Node
+/node_modules
+
+# Testing / CI
+Homestead.json
+Homestead.yaml
